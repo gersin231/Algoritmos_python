@@ -3,5 +3,11 @@ frutas=["maça","laranja","banana","cereja"]
 print([1,2]+[3,4])
 print(frutas +[6,7,8,9])
 
-print(["teste"]*4)
-print([1,2, ["ola"]]*2)
+print([]*4)
+a=[12,43,56,12,6]
+a.sort()
+print(a)
+
+a.reverse()
+print(a)
+print(a.index(43))
