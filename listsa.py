@@ -9,5 +9,3 @@ a.sort()
 print(a)
 
 a.reverse()
-a.insert(1,100)
-print(a)
