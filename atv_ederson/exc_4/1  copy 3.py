@@ -1,6 +1,11 @@
-a=float(input("Digite o valor: "))
-b= float(input("Digite o valor: "))
-c= float(input("Digite o valor: "))
+salario= float(input("Salario : "))
 
-res= (a+b) *c
-print(res)
+if (salario<500):
+    print((salario*(15/100)))
+
+elif(salario>=500 and salario<=1000):
+    print((salario*(10/100)))
+    
+else:
+    print((salario*(5/100)))
+
