@@ -1,7 +1,19 @@
 while True:
-    valor=int(input("Digite 0 ou 10 para fim:"))
+    nome=input("Digite o nome:")
+    idade=int(input("Digite a idade:"))
+    salario=float(input("Digite o salario:"))
+    sexo=input("Digite o sexo:")
+    Estado_Civil=input("Digite o Estado Civil:")
+    quantidade = len(nome)
     
-    if valor>=1 and valor <=10:
+    if (quantidade>=3 and 
+    idade>=0 and idade<=150 and 
+    sexo in["m","f","o"] and 
+    Estado_Civil in ["s","c","v","d"]):
+
+        
+        print(f" nome: {nome}\n idade: {idade}\n salario: {salario}\n sexo: {sexo}\n Estado Civil: {Estado_Civil}")
         break
     else:
-        print("valor invalido")
+        print("Tente novamente")
+        
