@@ -11,26 +11,30 @@ while True:
     esc=input("escolha: ")
 
     if esc =="1":
+        print("adição\n")
         n=int(input("digite um numero: "))
         n2=int(input("digite um numero: "))
         res= n+n2
         print(res)
     elif esc =="2":
+        print("subtração\n")
         n=int(input("digite um numero: "))
         n2=int(input("digite um numero: "))
         res= n-n2
         print(res)
     elif esc =="3":
+        print("multiplicação\n")
         n=int(input("digite um numero: "))
         n2=int(input("digite um numero: "))
         res= n*n2
         print(res)
     elif esc =="4":
+        print("divisa\n")
         n=int(input("digite um numero: "))
         n2=int(input("digite um numero: "))
         res= n/n2
         print(res)
 
-    else:
-        print("ERRRO")
+    elif esc == "S" or esc=="s":
+        break
 
