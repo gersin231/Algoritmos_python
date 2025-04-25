@@ -5,31 +5,32 @@ print("******************************** \n"
 "2 subtração\n"
 "3 multiplicação\n"
 "4 divisão\n"
+"S ou s para sair\n"
 "********************************")
+while True:
+    esc=input("escolha: ")
 
-esc=input("escolha: ")
+    if esc =="1":
+        n=int(input("digite um numero: "))
+        n2=int(input("digite um numero: "))
+        res= n+n2
+        print(res)
+    elif esc =="2":
+        n=int(input("digite um numero: "))
+        n2=int(input("digite um numero: "))
+        res= n-n2
+        print(res)
+    elif esc =="3":
+        n=int(input("digite um numero: "))
+        n2=int(input("digite um numero: "))
+        res= n*n2
+        print(res)
+    elif esc =="4":
+        n=int(input("digite um numero: "))
+        n2=int(input("digite um numero: "))
+        res= n/n2
+        print(res)
 
-if esc =="1":
-    n=int(input("digite um numero: "))
-    n2=int(input("digite um numero: "))
-    res= n+n2
-    print(res)
-elif esc =="2":
-    n=int(input("digite um numero: "))
-    n2=int(input("digite um numero: "))
-    res= n-n2
-    print(res)
-elif esc =="3":
-    n=int(input("digite um numero: "))
-    n2=int(input("digite um numero: "))
-    res= n*n2
-    print(res)
-elif esc =="4":
-    n=int(input("digite um numero: "))
-    n2=int(input("digite um numero: "))
-    res= n/n2
-    print(res)
-
-else:
-    print("ERRRO")
+    else:
+        print("ERRRO")
 
