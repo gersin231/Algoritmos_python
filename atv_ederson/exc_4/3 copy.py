@@ -4,9 +4,9 @@ b=float(input("digite a nota 2: "))
 
 media= (a+b)/2
 
-if(media>=7 and media<=9.9):
+if(media>=7 and media<=9.99):
     print("Aprovado")
-elif(media<7):
+elif(media<6.99):
     print("Reprovado")
     
 elif(media==10):

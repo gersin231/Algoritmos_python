@@ -11,12 +11,12 @@ if(salario_bruto<=900):
 elif(salario_bruto>900 and salario_bruto<=1500):
     IR=salario_bruto*(5/100)
     INSS=salario_bruto*(10/100)
-    FGTS=salario_bruto*(10/100)
+    FGTS=salario_bruto*(11/100)
     
     total_des=IR +INSS
     salario_liquido=salario_bruto-total_des
-    print("(-) IR (5%)                   :",IR)
-    print("(-) INSS (10%)                   :",INSS)
+    print("(-) IR (5%)                      :",IR)
+    print("(-) INSS (10%)                   :",FGTS)
     print("(-) FGTS (11%)                   :",FGTS)
     print("Total de descontos               :",total_des)
     print("Salario liquido                  :",salario_liquido)

@@ -42,20 +42,7 @@ while True:
     
     maior_voto = max(voto1, voto2, voto3, voto4, voto5, voto6)
     menor_voto = min(voto1, voto2, voto3, voto4, voto5, voto6)
-    if maior_voto == voto1:
-        vencedor = nomes_candidatos[1]
-    elif maior_voto == voto2:
-        vencedor = nomes_candidatos[2]
-    elif maior_voto == voto3:
-        vencedor = nomes_candidatos[3]
-    elif maior_voto == voto4:
-        vencedor = nomes_candidatos[4]
-    elif maior_voto == voto5:
-        vencedor = nomes_candidatos[5]
-    elif maior_voto == voto6:
-        vencedor = nomes_candidatos[6]
-
-    print(f"O candidato com o maior número de votos é {vencedor} com {maior_voto} votos.")
+    
 
     print(f"O maior número de votos é: {maior_voto}")
     print(f"O menor número de votos é: {menor_voto}")
