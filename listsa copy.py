@@ -1,10 +1,10 @@
 print("******************************** \n"
 "calculadora\n"
 
-"1 adição\n"
-"2 subtração\n"
-"3 multiplicação\n"
-"4 divisão\n"
+"a ou A = adição\n"
+"s ou Ssubtração\n"
+"m ou M multiplicação\n"
+"d ou D divisão\n"
 "S ou s para sair\n"
 "********************************")
 while True:

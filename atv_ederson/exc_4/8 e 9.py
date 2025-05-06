@@ -1,6 +1,7 @@
-a=float(input("Digite o valor: "))
-b= float(input("Digite o valor: "))
-c= float(input("Digite o valor: "))
+# 8
+cidades = ["São Paulo", "Rio", "Belo Horizonte", "Curitiba"]
+print(cidades[2])
 
-res= (a+b) *c
-print(res)
+# 9
+cores = ["azul", "verde", "vermelho", "amarelo", "roxo"]
+print(cores[1])

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Favoritos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="index.html" class="voltar-link">← Voltar</a>
+
+  <div class="titulo">
+    <h1>Favoritos</h1>
+  </div>
+  <select id="categoryFilter">
+    <option value="all">Categoria</option>
+    <option value="eletronicos">Eletrônicos</option>
+    <option value="roupas">Roupas</option>
+    <option value="livros">Livros</option>
+  </select>
+
+  <div id="favoritosList" class="product-list"></div>
+
+  <script>
+    const products = [
+      { id: 1, nome: "Smartphone", categoria: "eletronicos" },
+      { id: 2, nome: "Camisa Polo", categoria: "roupas" },
+      { id: 3, nome: "Notebook", categoria: "eletronicos" },
+      { id: 4, nome: "Livro de HTML", categoria: "livros" },
+      { id: 5, nome: "Calça Jeans", categoria: "roupas" },
+    ];
+
+    const favoritosList = document.getElementById("favoritosList");
+    const categoryFilter = document.getElementById("categoryFilter");
+
+    function getFavoritos() {
+      return JSON.parse(localStorage.getItem("favoritos")) || [];
+    }
+
+    function renderFavoritos() {
+      favoritosList.innerHTML = "";
+      const favoritosIds = getFavoritos();
+      const categoria = categoryFilter.value;
+
+      const favoritos = products.filter(prod =>
+        favoritosIds.includes(prod.id) &&
+        (categoria === "all" || prod.categoria === categoria)
+      );
+
+      if (favoritos.length === 0) {
+        favoritosList.innerHTML = "<p>Nenhum favorito encontrado.</p>";
+        return;
+      }
+
+      favoritos.forEach(prod => {
+        const div = document.createElement("div");
+        div.className = "product";
+        div.innerHTML = `
+          <span class="estrela favorito" onclick="removerFavorito(${prod.id})">★</span>
+          <h3>${prod.nome}</h3>
+          <p class="hidden-category">Categoria: ${prod.categoria}</p>
+          <a href="produto.html?id=${prod.id}">Ver detalhes</a>
+        `;
+        favoritosList.appendChild(div);
+      });
+    }
+
+    function removerFavorito(id) {
+      let favoritos = getFavoritos();
+      favoritos = favoritos.filter(favId => favId !== id);
+      localStorage.setItem("favoritos", JSON.stringify(favoritos));
+      renderFavoritos();
+    }
+
+    categoryFilter.addEventListener("change", renderFavoritos);
+
+    renderFavoritos();
+  </script>
+</body>
+</html>

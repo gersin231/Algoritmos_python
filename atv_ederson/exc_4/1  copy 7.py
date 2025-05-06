@@ -1,6 +1,3 @@
-a=float(input("Digite o valor: "))
-b= float(input("Digite o valor: "))
-c= float(input("Digite o valor: "))
-
-res= (a+b) *c
-print(res)
+# 7
+lista4 = [5, 10, 15, 20, 25, 30]
+print(lista4[1], lista4[4])

@@ -24,51 +24,48 @@
 
 # else:
 #     print("valores são iguais:")
-# a=input("Digite o produto: ")
-# b= input("Digite o produto: ")
-# c= input("Digite o produto: ")
+a=input("Digite o produto: ")
+b= input("Digite o produto: ")
+c= input("Digite o produto: ")
 
-# a1=float(input("Digite o valor do produto:"))
-# b2= float(input("Digite o valor do produto:"))
-# c3= float(input("Digite o valor do produto:" ))
-
-
-# if (a1<b2 and b2<c3):
-#     print("o preço do",a,"e maior que o do", b ,"e do",c)
+a1=float(input("Digite o valor do produto:"))
+b2= float(input("Digite o valor do produto:"))
+c3= float(input("Digite o valor do produto:" ))
 
 
-# elif(b<a and a<c):
-#     print("o preço do",b,"e maior que o do", a ,"e do",c)
+if (a1<b2 and b2<c3):
+    print("o preço do",a,"e maior que o do", b ,"e do",c)
+
+
+elif(b<a and a<c):
+    print("o preço do",b,"e maior que o do", a ,"e do",c)
 
 
 
-# elif(c<a and c<b):
-#     print("o preço do",c,"e maior que o do", b ,"e do",a)
+elif(c<a and c<b):
+    print("o preço do",c,"e maior que o do", b ,"e do",a)
 
 
-# else:
-#     print("")
+else:
+    print("")
 
 a=float(input("Digite o valor do produto:"))
 b= float(input("Digite o valor do produto:"))
 c= float(input("Digite o valor do produto:" ))
 
 
-if (a>b and a>c and b>c):
-    print(a, b ,c)
-elif(a>b and a>c and c>b):
-    print(a, c ,b)
+if (a>b and bc):
+    print("o preço do",a,"e maior que o do", b ,"e do",c)
 
-elif(b>a and b>c and a>c):
-    print(b, a ,c)
 
-elif(b>a and b>c and c>a):
-    print(b, c ,b)
+elif(b<a and a<c):
+    print("o preço do",b,"e maior que o do", a ,"e do",c)
 
-elif(c>b and c>a and a>b):
-    print(c, b ,a)
 
-elif(c>b and c>a and b>a):
-    print(c, a ,b)
+
+elif(c<a and c<b):
+    print("o preço do",c,"e maior que o do", b ,"e do",a)
+
+
 else:
     print("")
